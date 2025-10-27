@@ -1,0 +1,11 @@
+fastapi
+uvicorn[standard]
+gspread
+google-auth
+python-dotenv
+requests
+openai
+APScheduler
+Jinja2
+python-multipart
+itsdangerous
