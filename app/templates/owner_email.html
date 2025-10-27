@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+  <body>
+    <p>Hi,</p>
+    <p>Inventory for <strong>{{ item.sku }}</strong> ({{ item.description }}) is low.</p>
+    <p>On hand: {{ item.on_hand_qty }}, Threshold: {{ item.reorder_threshold }}, Suggested reorder: {{ item.reorder_qty }}</p>
+    <p>
+      <a href="{{ confirm_url }}">✅ Confirm (auto-order)</a>
+      &nbsp;&nbsp;
+      <a href="{{ reject_url }}">❌ Reject</a>
+    </p>
+    <p>If you didn't request this, ignore.</p>
+  </body>
+</html>
